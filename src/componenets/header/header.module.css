@@ -1,0 +1,32 @@
+.header {
+	position: sticky;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 2rem;
+	padding: 2rem 5%;
+	box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+	display: flex;
+	color: white;
+	background-color: var(--main-color);
+}
+
+.headerLogoContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.headerLogo {
+	font-size: 2.5rem;
+	cursor: default;
+	color: white;
+}
+
+.headerSubtitle {
+	font-size: 1.2rem;
+	font-weight: 400;
+	font-style: italic;
+	letter-spacing: 0.2ch;
+}

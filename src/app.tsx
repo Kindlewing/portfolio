@@ -1,5 +1,5 @@
-import { Header } from './componenets/header';
-import { Main } from './componenets/main';
+import { Header } from './componenets/header/header';
+import { Main } from './componenets/main/main';
 import './css/app.css';
 
 function App() {
