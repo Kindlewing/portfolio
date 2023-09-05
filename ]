@@ -11,24 +11,20 @@ const Header = () => {
 				>
 					Hudson Finn
 				</a>
+				<p className={styles.headerSubtitle}>Web Developer</p>
 			</div>
-			<nav>
+			<div className={styles.headerNavLinkContainer}>
 				<ul className={styles.headerNavLinks}>
 					<li>
-						<NavLink href="#about">About</NavLink>
+						<NavLink href="#about">About me</NavLink>
+						<NavLink href="#Education">Education</NavLink>
+						<NavLink href="#contact">Contact</NavLink>
 					</li>
 					<li>
 						<NavLink href="#projects">Projects</NavLink>
 					</li>
-
-					<li>
-						<NavLink href="#education">Education</NavLink>
-					</li>
-					<li>
-						<NavLink href="#contact">Contact</NavLink>
-					</li>
 				</ul>
-			</nav>
+			</div>
 		</header>
 	);
 };

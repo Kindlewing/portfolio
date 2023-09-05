@@ -7,15 +7,30 @@
 	padding: 2rem 5%;
 	box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
 	display: flex;
-	color: white;
-	background-color: var(--main-color);
+	justify-content: space-between;
+	color: var(--secondary);
+	background-color: var(--background);
 }
 
 .headerLogoContainer {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
+}
+
+.headerNavLinks {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 3rem;
+	list-style: none;
+}
+
+.headerNavLink {
+	font-size: 1.2rem;
+	display: inline-block;
+	color: white;
 }
 
 .headerLogo {

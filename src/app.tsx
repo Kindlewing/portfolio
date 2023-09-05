@@ -1,12 +1,12 @@
 import { Header } from './componenets/header/header';
-import { Main } from './componenets/main/main';
+import { Content } from './componenets/content/content';
 import './css/app.css';
 
 function App() {
 	return (
 		<>
 			<Header />
-			<Main />
+			<Content />
 		</>
 	);
 }
