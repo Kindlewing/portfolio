@@ -1,18 +1,29 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import styles from './header.module.css';
 import { NavLink } from './navLink';
 
 const Header = () => {
 	return (
 		<header className={styles.header}>
-			<div className={styles.headerLogoContainer}>
-				<a
-					className={styles.headerLogo}
-					href="#"
-				>
-					Hudson
-				</a>
-			</div>
+			<a
+				className={styles.headerLogo}
+				href="#"
+			>
+				Hudson
+			</a>
 			<nav>
+				<input
+					type="checkbox"
+					className={styles.checkbox}
+					id="hamburger"
+				/>
+				<label
+					htmlFor="hamburger"
+					className={styles.hamburger}
+				>
+					<FontAwesomeIcon icon={faBars} />
+				</label>
 				<ul className={styles.headerNavLinks}>
 					<li>
 						<NavLink href="#about">About</NavLink>

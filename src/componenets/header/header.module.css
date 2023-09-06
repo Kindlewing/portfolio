@@ -7,16 +7,10 @@
 	padding: 2rem 5%;
 	box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	color: var(--secondary);
 	background-color: var(--background);
-}
-
-.headerLogoContainer {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 }
 
 .headerNavLinks {
@@ -25,6 +19,7 @@
 	justify-content: center;
 	gap: 3rem;
 	list-style: none;
+	display: none;
 }
 
 .headerNavLink {
@@ -32,7 +27,7 @@
 	color: white;
 	font-size: 1.25rem;
 	display: inline-block;
-	padding: 0.25rem;
+	padding: 0.625rem;
 	border-radius: 10%;
 }
 
@@ -55,12 +50,39 @@
 .headerLogo {
 	font-size: 2.5rem;
 	cursor: default;
+	padding-left: 1em;
 	color: white;
 }
 
-.headerSubtitle {
-	font-size: 1.2rem;
-	font-weight: 400;
-	font-style: italic;
-	letter-spacing: 0.2ch;
+.hamburger {
+	font-size: 2rem;
+	color: white;
+	line-height: 2rem;
+	margin-right: 3rem;
+	float: right;
+	display: none;
+}
+
+.checkbox {
+	display: none;
+}
+
+@media (max-width: 60em) {
+	.hamburger {
+		display: block;
+	}
+
+	.checkbox:checked ~ .headerNavLinks {
+		display: flex;
+	}
+}
+
+@media screen and (min-width: 60em) {
+	.headerNavLinks {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 3rem;
+		list-style: none;
+	}
 }
