@@ -13,13 +13,13 @@
 	background-color: var(--background);
 }
 
-.headerNavLinks {
+.primaryNavBar {
+	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: 3rem;
 	list-style: none;
-	display: none;
 }
 
 .headerNavLink {
@@ -55,11 +55,14 @@
 }
 
 .hamburger {
+	position: absolute;
 	font-size: 2rem;
 	color: white;
 	line-height: 2rem;
 	margin-right: 3rem;
-	float: right;
+	z-index: 9999;
+	top: 2rem;
+	right: 2rem;
 	display: none;
 }
 
@@ -67,18 +70,31 @@
 	display: none;
 }
 
-@media (max-width: 60em) {
+@media screen and (max-width: 60em) {
 	.hamburger {
 		display: block;
 	}
 
-	.checkbox:checked ~ .headerNavLinks {
+	.primaryNavBar {
+		position: fixed;
+		inset: 0 0 0 60%;
 		display: flex;
+		z-index: 1000;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background-color: var(--primary);
+		transform: translateX(100%);
+		transition: transform 350ms ease-out;
+	}
+
+	.primaryNavBar[data-showsidebar='true'] {
+		transform: translateX(0%);
 	}
 }
 
 @media screen and (min-width: 60em) {
-	.headerNavLinks {
+	.primaryNavBar {
 		display: flex;
 		align-items: center;
 		justify-content: center;

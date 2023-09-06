@@ -1,9 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import styles from './header.module.css';
-import { NavLink } from './navLink';
+import { NavBar } from './navigation';
+import { useState } from 'react';
 
 const Header = () => {
+	const [showSidebar, setShowSidebar] = useState(false);
+
 	return (
 		<header className={styles.header}>
 			<a
@@ -16,6 +19,7 @@ const Header = () => {
 				<input
 					type="checkbox"
 					className={styles.checkbox}
+					onClick={() => setShowSidebar(!showSidebar)}
 					id="hamburger"
 				/>
 				<label
@@ -24,21 +28,7 @@ const Header = () => {
 				>
 					<FontAwesomeIcon icon={faBars} />
 				</label>
-				<ul className={styles.headerNavLinks}>
-					<li>
-						<NavLink href="#about">About</NavLink>
-					</li>
-					<li>
-						<NavLink href="#projects">Projects</NavLink>
-					</li>
-
-					<li>
-						<NavLink href="#education">Education</NavLink>
-					</li>
-					<li>
-						<NavLink href="#contact">Contact</NavLink>
-					</li>
-				</ul>
+				<NavBar showSidebar={showSidebar} />
 			</nav>
 		</header>
 	);
