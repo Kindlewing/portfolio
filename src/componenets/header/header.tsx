@@ -9,7 +9,7 @@ const Header = () => {
 					className={styles.headerLogo}
 					href="#"
 				>
-					Hudson Finn
+					Hudson
 				</a>
 			</div>
 			<nav>

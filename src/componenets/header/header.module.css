@@ -28,9 +28,28 @@
 }
 
 .headerNavLink {
-	font-size: 1.2rem;
-	display: inline-block;
+	position: relative;
 	color: white;
+	font-size: 1.25rem;
+	display: inline-block;
+	padding: 0.25rem;
+	border-radius: 10%;
+}
+
+.headerNavLink::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	z-index: -1;
+	background-color: var(--accent);
+	transition: 0.5s;
+}
+
+.headerNavLink:hover::before {
+	width: 100%;
 }
 
 .headerLogo {

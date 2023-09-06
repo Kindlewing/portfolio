@@ -2,9 +2,9 @@ import styles from './content.module.css';
 
 const Content = () => {
 	return (
-		<main className={styles.mainContent}>
+		<main>
 			<section
-				className={styles.about}
+				className={styles.homeContent}
 				id="about"
 			>
 				<p className={styles.aboutHeading}> About me </p>
