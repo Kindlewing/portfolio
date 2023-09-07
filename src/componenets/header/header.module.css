@@ -61,7 +61,6 @@
 	line-height: 2rem;
 	margin-right: 3rem;
 	z-index: 9999;
-	top: 2rem;
 	right: 2rem;
 	display: none;
 }
@@ -72,7 +71,29 @@
 
 @media screen and (width <= 25.75em) {
 	.headerLogo {
-		font-size: 0.625rem;
+		font-size: 1.5rem;
+		padding-left: 0.25em;
+	}
+	.hamburger {
+		font-size: 1.25rem;
+		right: 0.25em;
+	}
+}
+@media screen and (width <= 25.75em) {
+	.headerLogo {
+		font-size: 1.5rem;
+		padding-left: 0.425em;
+	}
+
+	.hamburger {
+		font-size: 1.5rem;
+		right: 0.5em;
+	}
+}
+
+@media screen and (width <= 25.75em) {
+	.headerLogo {
+		font-size: 1.25rem;
 		padding-left: 0.425em;
 	}
 }
