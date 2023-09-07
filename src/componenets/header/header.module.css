@@ -70,7 +70,21 @@
 	display: none;
 }
 
-@media screen and (max-width: 60em) {
+@media screen and (width <= 25.75em) {
+	.headerLogo {
+		font-size: 0.625rem;
+		padding-left: 0.425em;
+	}
+}
+
+@media screen and (26em <= width <= 50em) {
+	.headerLogo {
+		font-size: 2rem;
+		padding-left: 0.625em;
+	}
+}
+
+@media screen and (width <= 60em) {
 	.hamburger {
 		display: block;
 	}
@@ -90,15 +104,5 @@
 
 	.primaryNavBar[data-showsidebar='true'] {
 		transform: translateX(0%);
-	}
-}
-
-@media screen and (min-width: 60em) {
-	.primaryNavBar {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 3rem;
-		list-style: none;
 	}
 }

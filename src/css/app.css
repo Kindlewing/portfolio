@@ -35,4 +35,6 @@ video {
 	--primary: #456245;
 	--secondary: #ebf1ff;
 	--accent: #62261d;
+
+	--mobile-width: 25.75em;
 }
