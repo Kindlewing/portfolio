@@ -2,8 +2,11 @@ import styles from './content.module.css';
 
 const Home = () => {
 	return (
-		<section>
-			<h1 className={styles.heroHeading}> Hi, I'm Hudson Finn </h1>
+		<section className={styles.hero}>
+			<div className={styles.heroHeader}>
+				<h1 className={styles.heroTitle}> Hudson Finn </h1>
+				<p className={styles.heroSubtitle}> Software Engineer </p>
+			</div>
 		</section>
 	);
 };
