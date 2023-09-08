@@ -12,9 +12,7 @@ const Header = () => {
 			<a
 				className={styles.headerLogo}
 				href="#"
-			>
-				Hudson
-			</a>
+			></a>
 			<nav>
 				<input
 					type="checkbox"

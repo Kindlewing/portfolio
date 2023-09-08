@@ -1,14 +1,9 @@
-import styles from './content.module.css';
+import { Home } from './home';
 
 const Content = () => {
 	return (
 		<main>
-			<section
-				className={styles.homeContent}
-				id="about"
-			>
-				<p className={styles.aboutHeading}> About me </p>
-			</section>
+			<Home />
 		</main>
 	);
 };

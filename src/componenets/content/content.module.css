@@ -1,11 +1,22 @@
+p {
+	color: white;
+}
+
 .homeContent {
 	padding: 5rem;
 }
 
 .about {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
 }
 
 .aboutHeading {
-	color: white;
-	font-size: 2rem;
+	font-size: 2.5rem;
+}
+
+.aboutContent {
+	word-wrap: break-word;
+	padding: 2em;
 }
