@@ -1,7 +1,12 @@
-p,
-h1,
-h2 {
-	color: var(--text-100);
+:root {
+	--background: #232831;
+	--text-100: #fbebd5;
+	--neutral-grey: #717578;
+	--primary: #fcd067;
+}
+
+button {
+	padding: 1rem;
 }
 
 .hero {
@@ -16,10 +21,46 @@ h2 {
 
 .heroTitle {
 	font-size: 4rem;
+	color: var(--neutral-grey);
 }
 
 .heroSubtitle {
 	font-size: 2rem;
 	font-style: italic;
-	align-self: center;
+	color: var(--text-100);
+}
+
+.heroButtons {
+	display: inline-flex;
+	gap: 1rem;
+	padding: 1rem;
+}
+
+.heroButton {
+	position: relative;
+	background-color: transparent;
+	color: var(--text-100);
+	width: 50%;
+	height: 100%;
+	border: 1px solid var(--primary);
+}
+
+.heroButton:hover {
+	color: black;
+}
+
+.heroButton::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	z-index: -1;
+	background-color: var(--primary);
+	transition: 0.5s;
+}
+
+.heroButton:hover::before {
+	width: 100%;
 }

@@ -1,8 +1,8 @@
 :root {
-	--background: #181b25;
-	--text-100: #d5e6e4;
-	--text-900: #333333;
-	--accent: #a3abbd;
+	--background: #232831;
+	--text-100: #fbebd5;
+	--neutral-grey: #717578;
+	--primary: #fcd067;
 }
 
 .header {
@@ -20,6 +20,13 @@
 	background-color: var(--background);
 }
 
+.logo {
+	font-size: 2.5rem;
+	cursor: default;
+	padding-left: 1em;
+	color: var(--primary);
+}
+
 .primaryNavBar {
 	position: relative;
 	display: flex;
@@ -31,7 +38,7 @@
 
 .headerNavLink {
 	position: relative;
-	color: var(--text-100);
+	color: var(--primary);
 	font-size: 1.25rem;
 	display: inline-block;
 	padding: 0.625rem;
@@ -39,7 +46,7 @@
 }
 
 .headerNavLink:hover {
-	color: var(--text-900);
+	color: var(--text-100);
 }
 
 .headerNavLink::before {
@@ -49,8 +56,9 @@
 	left: 0;
 	width: 0%;
 	height: 100%;
-	z-index: -1;
-	background-color: var(--accent);
+	z-index: 1;
+	background-color: var(--primary);
+	opacity: 0.2;
 	transition: 0.5s;
 }
 
@@ -58,17 +66,10 @@
 	width: 100%;
 }
 
-.headerLogo {
-	font-size: 2.5rem;
-	cursor: default;
-	padding-left: 1em;
-	color: var(--text);
-}
-
 .hamburger {
 	position: absolute;
 	font-size: 2rem;
-	color: var(--text);
+	color: var(--primary);
 	line-height: 2rem;
 	margin-right: 3rem;
 	z-index: 9999;
@@ -123,15 +124,20 @@
 
 	.primaryNavBar {
 		position: fixed;
-		inset: 0 0 0 60%;
+		inset: 0 0 0 30%;
 		display: flex;
 		z-index: 1000;
 		flex-direction: column;
 		align-items: center;
+		border: 1px solid var(--text-100);
 		justify-content: center;
-		background-color: var(--primary);
+		background-color: var(--background);
 		transform: translateX(100%);
 		transition: transform 350ms ease-out;
+	}
+
+	.headerNavLink {
+		font-size: 1.5rem;
 	}
 
 	.primaryNavBar[data-showsidebar='true'] {

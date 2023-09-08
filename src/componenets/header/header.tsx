@@ -10,9 +10,11 @@ const Header = () => {
 	return (
 		<header className={styles.header}>
 			<a
-				className={styles.headerLogo}
+				className={styles.logo}
 				href="#"
-			></a>
+			>
+				HFNN
+			</a>
 			<nav>
 				<input
 					type="checkbox"

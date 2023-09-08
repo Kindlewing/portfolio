@@ -1,3 +1,10 @@
+:root {
+	--background: #232831;
+	--text-100: #fbebd5;
+	--neutral-grey: #717578;
+	--primary: #fcd067;
+}
+
 /* makes sizing simpler */
 
 *,
