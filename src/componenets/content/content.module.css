@@ -1,7 +1,7 @@
 p,
 h1,
 h2 {
-	color: white;
+	color: var(--text-100);
 }
 
 .hero {
@@ -15,11 +15,11 @@ h2 {
 }
 
 .heroTitle {
-	font-size: 2.5rem;
+	font-size: 4rem;
 }
 
 .heroSubtitle {
-	font-size: 1rem;
+	font-size: 2rem;
 	font-style: italic;
 	align-self: center;
 }
