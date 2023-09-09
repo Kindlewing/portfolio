@@ -1,18 +1,3 @@
-:root {
-	--background: #232831;
-	--text-100: #fbebd5;
-	--neutral-grey: #717578;
-	--primary: #fcd067;
-}
-
-button {
-	padding: 1rem;
-}
-
-.hero {
-	padding: 5rem;
-}
-
 .heroHeader {
 	display: inline-flex;
 	flex-direction: column;
@@ -30,7 +15,7 @@ button {
 	color: var(--text-100);
 }
 
-.heroButtons {
+.heroButtonContainer {
 	display: inline-flex;
 	gap: 1rem;
 	margin-top: 3rem;
@@ -40,7 +25,6 @@ button {
 	position: relative;
 	background-color: transparent;
 	color: var(--text-100);
-	width: 50%;
 	height: 100%;
 	border: 1px solid var(--primary);
 	cursor: pointer;

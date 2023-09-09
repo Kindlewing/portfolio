@@ -1,0 +1,27 @@
+:root {
+	--background: #232831;
+	--text-100: #fbebd5;
+	--neutral-grey: #717578;
+	--primary: #fcd067;
+}
+
+p {
+	margin-bottom: 1em;
+	line-height: 1.2em;
+	text-indent: 1em;
+}
+
+.about {
+	background-color: var(--text-100);
+}
+
+.aboutHeader {
+	font-size: 3.5rem;
+	text-align: center;
+}
+
+.aboutText {
+	color: black;
+	font-size: 1.25rem;
+	letter-spacing: 0.0125em;
+}

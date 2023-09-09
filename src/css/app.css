@@ -24,6 +24,20 @@
 
 html {
 	background-color: var(--background);
+	scroll-behavior: smooth;
+}
+
+p,
+h1 {
+	color: var(--text-100);
+}
+
+button {
+	padding: 1rem;
+}
+
+section {
+	padding: 5rem 2.25rem;
 }
 
 /* responsive images/videos */
