@@ -6,6 +6,7 @@ import { useState } from 'react';
 
 const Header = () => {
 	const [showSidebar, setShowSidebar] = useState(false);
+	const [hamburgerClicked, setHamburgerClicked] = useState(false);
 
 	return (
 		<header className={styles.header}>
@@ -19,10 +20,14 @@ const Header = () => {
 				<input
 					type="checkbox"
 					className={styles.checkbox}
-					onClick={() => setShowSidebar(!showSidebar)}
+					onClick={() => {
+						setShowSidebar(!showSidebar);
+						setHamburgerClicked(!hamburgerClicked);
+					}}
 					id="hamburger"
 				/>
 				<label
+					data-hamburgerclicked={hamburgerClicked}
 					htmlFor="hamburger"
 					className={styles.hamburger}
 				>

@@ -1,9 +1,9 @@
-import { Home } from './home';
+import { Hero } from './hero';
 
 const Content = () => {
 	return (
 		<main>
-			<Home />
+			<Hero />
 		</main>
 	);
 };

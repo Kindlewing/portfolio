@@ -33,7 +33,7 @@ button {
 .heroButtons {
 	display: inline-flex;
 	gap: 1rem;
-	padding: 1rem;
+	margin-top: 3rem;
 }
 
 .heroButton {
@@ -43,6 +43,7 @@ button {
 	width: 50%;
 	height: 100%;
 	border: 1px solid var(--primary);
+	cursor: pointer;
 }
 
 .heroButton:hover {

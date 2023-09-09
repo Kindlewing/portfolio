@@ -9,7 +9,7 @@ const NavBar = (props: Props) => {
 	return (
 		<ul
 			className={styles.primaryNavBar}
-			data-showSidebar={props.showSidebar}
+			data-showsidebar={props.showSidebar}
 		>
 			<li>
 				<NavLink href="#about">About</NavLink>
