@@ -37,6 +37,7 @@ button {
 }
 
 section {
+	min-height: 100vh;
 	padding: 5rem 2.25rem;
 }
 
