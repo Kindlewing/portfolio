@@ -1,4 +1,4 @@
-import { About } from './about';
+import { About } from './About';
 import { Hero } from './hero';
 
 const Content = () => {
