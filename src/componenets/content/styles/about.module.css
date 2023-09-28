@@ -24,4 +24,5 @@ p {
 	color: black;
 	font-size: 1.25rem;
 	letter-spacing: 0.0125em;
+	max-width: 50vw;
 }
